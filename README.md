@@ -14,7 +14,7 @@
 Use TDD to create a `Passenger` class that responds to the following interaction pattern. For the `adult?` method, a `Passenger` is considered an adult if they are age 18 or older.
 
 ```ruby
-pry(main)> require './lib/passenger'
+pry(main)> require './lib/passenger.'
 # => true
 
 pry(main)> charlie = Passenger.new({"name" => "Charlie", "age" => 18})    
