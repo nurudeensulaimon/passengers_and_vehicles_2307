@@ -8,10 +8,39 @@ attr_reader :unique_name, :admission_price,:vehicles, :revenue
         @admission_price=admission_price
         @vehicles = []
         @revenue=revenue
-        
     end 
-end
-#     def revenue(adult, admission_price)
-#         adult.count * admission_price 
-#     end 
-# end 
+    def revenue(adult, admission_price)
+        adult.count * admission_price 
+    end 
+     
+    def add_vehicles(vehicle)
+        @vehicles << vehicles 
+    end 
+
+    def all_attendees(passengers)
+        not_sorted=@passengers.find_all |passenger|
+        passenger.name
+    end 
+        not_sorted.sort_by do |passenger|
+         passenger.name
+     end 
+  end 
+    def all_minors(passenger)
+        not_sorted=@passengers.find_all |passenger|
+        passenger.age  < 18
+    end 
+       not_sorted.sort_by do |passenger|
+       passenger.name
+    end 
+end 
+
+    def all_adult(passenger)
+       not_sorted=@passengers.find_all |passenger|
+       passenger.age  >=  18
+    end 
+       not_sorted.sort_by do |passenger|
+       passenger.unique_name
+    end 
+  end 
+end 
+   
