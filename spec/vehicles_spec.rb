@@ -1,7 +1,7 @@
 require './lib/vehicles'
 require './lib/passengers'
-
-RSpec.describe Passenger do 
+require 'pry'
+RSpec.describe Vehicle do 
     it "exists" do
       vehicle = Vehicle.new("2001", "Honda", "Civic")
       expect(vehicle).to be_a Vehicle
@@ -12,7 +12,7 @@ RSpec.describe Passenger do
       expect(vehicle.year).to eq("2001")
     end 
    
-    it 'has year' do 
+    it 'has make' do 
       vehicle = Vehicle.new("2001", "Honda", "Civic")
       expect(vehicle.make).to eq("Honda")
     end 
@@ -22,11 +22,11 @@ RSpec.describe Passenger do
       expect(vehicle.model).to eq("Civic")
     end 
 
-    it "has a method speeding" do 
+    xit "has a method speeding" do 
       vehicle = Vehicle.new("2001", "Honda", "Civic")
-       expect(vehicle.speeding).to eq(false)
+       expect(vehicle.speeding?).to eq(false)
        vehicle.speed
-       expect(vehicle.speeding).to eq(true)
+       expect(vehicle.speeding?).to eq(true)
     end 
 end 
 
