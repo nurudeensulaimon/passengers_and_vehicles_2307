@@ -39,16 +39,15 @@ RSpec.describe Vehicle do
       vehicle.add_passengers(charlie)
       vehicle.add_passengers(jude)
       vehicle.add_passengers(taylor)   
-      binding.pry  
       expect(vehicle.passengers).to eq([charlie,jude, taylor])
     end 
   end 
       it "has a method vehicle.num_adults" do
-      #vehicle=Vehicle.new("2001", "Honda", "Civic","speeding","passengers")
+      vehicle=Vehicle.new("2001", "Honda", "Civic","speeding","passengers")
       vehicle.num_adults
       expect(vehicle.num_adults).to eq(2)
       end
-end 
+end
    
 
    
