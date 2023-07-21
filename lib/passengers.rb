@@ -1,22 +1,26 @@
+ 
 class Passenger
 attr_reader:"name","age" 
-    def initialize(info)
-        @name = info["name"]
-        @age = info["age"] 
+    def initialize(passenger_info)
+        @name = passenger_info["name"]
+        @age = passenger_info["age"] 
+        @drive= false 
     end
 
-   def adult  
+    def adult  
        @age >= 18  
-   end 
+    end 
 
-   def adult?
-      @adult=true 
-   end
+    def  adult?
+       @age >= 18 
+    end 
 
-   def drive 
-      false 
-   end 
-   def drive?
-     @drive=true
-   end 
-end 
+    def drive
+    @drive=true
+    end 
+
+    def drive?
+    @drive 
+    end 
+end
+ 

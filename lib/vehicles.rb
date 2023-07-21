@@ -22,6 +22,7 @@ attr_reader :year, :make, :model, :speeding, :passengers
    def add_passengers(passenger)
        @passengers << passenger
    end   
+  
    def num_adults
        passengers=2
    end 

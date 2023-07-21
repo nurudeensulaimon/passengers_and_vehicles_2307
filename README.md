@@ -9,7 +9,7 @@
 * Compete the activity below
 * Push your solution to your fork
 * Submit a pull request from your repository to the turingschool-examples repository
-  * Make sure to put your name in your PR!
+* Make sure to put your name in your PR!
 
 Use TDD to create a `Passenger` class that responds to the following interaction pattern. For the `adult?` method, a `Passenger` is considered an adult if they are age 18 or older.
 
