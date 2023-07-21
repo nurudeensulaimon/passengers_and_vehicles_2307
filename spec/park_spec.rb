@@ -8,5 +8,17 @@ RSpec.describe Park do
       park=Park.new("unique_name","admission_price","vehicles","revenue")
       expect(park).to be_a Park
     end 
-end 
+  end 
+
+#  describe "#all_attendees" do
+#     ve      park=Park.new("unique_name","admission_price","vehicles","revenue")
+
+#     expect(park.all_attendees).to eq([])
+    
+
+
+#     xit "alphabetically sort object" do
+#     end    
+# end 
+
 
